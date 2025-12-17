@@ -1,1 +1,1 @@
-# projekti4-github-c--menaxhim-detyra
+# projekti4-github-c++-menaxhim-detyra
