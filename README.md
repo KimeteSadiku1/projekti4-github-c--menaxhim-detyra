@@ -1,4 +1,4 @@
-#  Menaxhimi i Detyrave – C++
+#  Menaxhimi i Detyrave â€“ C++
 
 
 ## Pershkrimi i Projektit
@@ -11,6 +11,8 @@ Aplikacioni ofron keto funksione:
 - **Shtimi i detyrave**
 - **Shfaqja e listes se detyrave**
 - **Fshirja e nje detyre sipas numrit**
+- **Perditesimi i detyres**
+- **Fshirja e te gjitha detyrave**
 - **Dalja nga aplikacioni**
 
 Te gjitha detyrat ruhen ne memorie gjate ekzekutimit te programit.
