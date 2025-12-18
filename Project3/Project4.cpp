@@ -25,6 +25,23 @@ void showTasks(const vector<string>& tasks) {
         cout << i + 1 << ". " << tasks[i] << endl;
     }
 }
+
+//funksioni me fshi nje detyre
+void deleteTask(vector<string>& tasks) {
+    int index;
+    cout << "Shkruaj numrin e detyres per fshirje: ";
+    cin >> index;
+    cin.ignore();
+
+    if (index > 0 && index <= tasks.size()) {
+        tasks.erase(tasks.begin() + index - 1);
+        cout << "Detyra u fshi me sukses.\n";
+    }
+    else {
+        cout << "Numri i detyres nuk eshte valid.\n";
+    }
+}
+
 // Koment i shtuar per demonstrim te branch dhe pull request
 int main() {
     vector<string> tasks;
@@ -34,6 +51,7 @@ int main() {
         cout << "\n--- Menaxhimi i Detyrave ---\n";
         cout << "1. Shto detyre\n";
         cout << "2. Shfaq detyrat\n";
+        cout << "3. Fshi detyre\n";
         cout << "0. Dil\n";
         cout << "Zgjedhja: ";
         cin >> choice;
@@ -43,6 +61,8 @@ int main() {
             addTask(tasks);
         else if (choice == 2)
             showTasks(tasks);
+        else if (choice == 3)
+            deleteTask(tasks);
 
     } while (choice != 0);
 
