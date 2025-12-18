@@ -35,4 +35,8 @@ Ctrl + F5 (Start Without Debugging)
 ### Menu kryesore e aplikacionit
 ![Menu](screenshots/menu.png)
 
+### Shtimi i detyres
+![Shto Detyre](screenshots/shto_detyre.png)
 
+### Fshirja e detyres
+![Fshi Detyre](screenshots/fshi_detyre.png)
