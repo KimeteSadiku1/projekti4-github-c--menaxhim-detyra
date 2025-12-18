@@ -65,17 +65,16 @@ void editTask(vector<string>& tasks) {
     }
 }
 
-
 //funskioni me i fshi krejt detyrat 
 void clearTasks(vector<string>& tasks) {
     tasks.clear();
     cout << "Te gjitha detyrat u fshine.\n";
 }
-
 // Funksioni me tregu sa detyra ka gjithsej
 void countTasks(const vector<string>& tasks) {
     cout << "Numri total i detyrave: " << tasks.size() << endl;
 }
+
 
 // Funksioni me shfaq detyren e fundit
 void showLastTask(const vector<string>& tasks) {
