@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <algorithm>
+
 
 using namespace std;
 
@@ -86,6 +88,22 @@ void showLastTask(const vector<string>& tasks) {
     cout << "Detyra e fundit eshte: " << tasks.back() << endl;
 }
 
+// Funksioni me i shfaq detyrat ne rend alfabetik
+void showTasksSorted(vector<string> tasks) {
+    if (tasks.empty()) {
+        cout << "Nuk ka detyra.\n";
+        return;
+    }
+
+    sort(tasks.begin(), tasks.end());
+
+    cout << "\nDetyrat ne rend alfabetik:\n";
+    for (int i = 0; i < tasks.size(); i++) {
+        cout << i + 1 << ". " << tasks[i] << endl;
+    }
+}
+
+
 
 // Koment i shtuar per demonstrim te branch dhe pull request
 int main() {
@@ -101,6 +119,7 @@ int main() {
         cout << "5. Fshi te gjitha detyrat\n";
         cout << "6. Numri i detyrave\n";
         cout << "7. Shfaq detyren e fundit\n";
+        cout << "8. Shfaq detyrat ne rend alfabetik\n";
         cout << "0. Dil\n";
         cout << "Zgjedhja: ";
         cin >> choice;
@@ -121,6 +140,9 @@ int main() {
             countTasks(tasks);
         else if (choice == 7)
             showLastTask(tasks);
+        else if (choice == 8)
+            showTasksSorted(tasks);
+
 
     } while (choice != 0);
 
