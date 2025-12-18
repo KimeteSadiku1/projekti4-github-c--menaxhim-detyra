@@ -65,6 +65,7 @@ void editTask(vector<string>& tasks) {
     }
 }
 
+
 //funskioni me i fshi krejt detyrat 
 void clearTasks(vector<string>& tasks) {
     tasks.clear();
@@ -88,6 +89,7 @@ int main() {
         cin >> choice;
         cin.ignore();
 
+        //Kushtezimet if/else
         if (choice == 1)
             addTask(tasks);
         else if (choice == 2)
