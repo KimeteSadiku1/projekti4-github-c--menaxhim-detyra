@@ -97,6 +97,8 @@ int main() {
         cout << "1. Shto detyre\n";
         cout << "2. Shfaq detyrat\n";
         cout << "3. Fshi detyre\n";
+        cout << "4. Perditeso detyre\n"; 
+        cout << "5. Fshi te gjitha detyrat\n";
         cout << "6. Numri i detyrave\n";
         cout << "7. Shfaq detyren e fundit\n";
         cout << "0. Dil\n";
@@ -111,7 +113,10 @@ int main() {
             showTasks(tasks);
         else if (choice == 3)
             deleteTask(tasks);
-        
+        else if (choice == 4)
+            editTask(tasks);        
+        else if (choice == 5)
+            clearTasks(tasks);
         else if (choice == 6)
             countTasks(tasks);
         else if (choice == 7)
