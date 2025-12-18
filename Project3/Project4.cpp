@@ -72,6 +72,22 @@ void clearTasks(vector<string>& tasks) {
     cout << "Te gjitha detyrat u fshine.\n";
 }
 
+// Funksioni me tregu sa detyra ka gjithsej
+void countTasks(const vector<string>& tasks) {
+    cout << "Numri total i detyrave: " << tasks.size() << endl;
+}
+
+// Funksioni me shfaq detyren e fundit
+void showLastTask(const vector<string>& tasks) {
+    if (tasks.empty()) {
+        cout << "Nuk ka asnje detyre.\n";
+        return;
+    }
+
+    cout << "Detyra e fundit eshte: " << tasks.back() << endl;
+}
+
+
 // Koment i shtuar per demonstrim te branch dhe pull request
 int main() {
     vector<string> tasks;
@@ -84,6 +100,8 @@ int main() {
         cout << "3. Fshi detyre\n";
         cout << "4. Perditeso detyre\n"; 
         cout << "5. Fshi te gjitha detyrat\n";
+        cout << "6. Numri i detyrave\n";
+        cout << "7. Shfaq detyren e fundit\n";
         cout << "0. Dil\n";
         cout << "Zgjedhja: ";
         cin >> choice;
@@ -100,6 +118,10 @@ int main() {
             editTask(tasks);        
         else if (choice == 5)
             clearTasks(tasks); 
+        else if (choice == 6)
+            countTasks(tasks);
+        else if (choice == 7)
+            showLastTask(tasks);
 
     } while (choice != 0);
 
