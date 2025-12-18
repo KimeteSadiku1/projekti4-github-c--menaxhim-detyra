@@ -33,10 +33,3 @@ Ctrl + F5 (Start Without Debugging)
 ## Shembull i ekzekutimit te programit
 
 
-![Menu](screenshots/menu.png)
-
-
-![Shto Detyre](screenshots/shto_detyre.png)
-
-
-![Fshi Detyre](screenshots/fshi_detyre.png)
