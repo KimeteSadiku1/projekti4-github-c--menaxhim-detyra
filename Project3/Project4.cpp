@@ -41,6 +41,35 @@ void deleteTask(vector<string>& tasks) {
         cout << "Numri i detyres nuk eshte valid.\n";
     }
 }
+//funksioni me perditesu nje detyre
+void editTask(vector<string>& tasks) {
+    int index;
+    string newTask;
+
+    if (tasks.empty()) {
+        cout << "Nuk ka detyra per perditesim.\n";
+        return;
+    }
+
+    cout << "Shkruaj numrin e detyres per perditesim: ";
+    cin >> index;
+    cin.ignore();
+
+    if (index > 0 && index <= tasks.size()) {
+        cout << "Shkruaj detyren e re: ";
+        getline(cin, newTask);
+        tasks[index - 1] = newTask;
+        cout << "Detyra u perditesua me sukses.\n";
+    } else {
+        cout << "Numri i detyres nuk eshte valid.\n";
+    }
+}
+
+//funskioni me i fshi krejt detyrat 
+void clearTasks(vector<string>& tasks) {
+    tasks.clear();
+    cout << "Te gjitha detyrat u fshine.\n";
+}
 
 // Koment i shtuar per demonstrim te branch dhe pull request
 int main() {
@@ -52,6 +81,8 @@ int main() {
         cout << "1. Shto detyre\n";
         cout << "2. Shfaq detyrat\n";
         cout << "3. Fshi detyre\n";
+        cout << "4. Perditeso detyre\n"; 
+        cout << "5. Fshi te gjitha detyrat\n";
         cout << "0. Dil\n";
         cout << "Zgjedhja: ";
         cin >> choice;
@@ -63,6 +94,10 @@ int main() {
             showTasks(tasks);
         else if (choice == 3)
             deleteTask(tasks);
+        else if (choice == 4)
+            editTask(tasks);        
+        else if (choice == 5)
+            clearTasks(tasks); 
 
     } while (choice != 0);
 
