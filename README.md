@@ -14,6 +14,9 @@ Aplikacioni ofron keto funksione:
 - **Perditesimi i detyres**
 - **Fshirja e te gjitha detyrave**
 - **Dalja nga aplikacioni**
+- **Numri i te gjitha detyrave**
+- **Shfaqja e detyres se fundit**
+- **Shfaqja e detyrave me rend alfabetik**
 
 Te gjitha detyrat ruhen ne memorie gjate ekzekutimit te programit.
 
