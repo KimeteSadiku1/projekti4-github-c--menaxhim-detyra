@@ -34,4 +34,12 @@ Ctrl + F5 (Start Without Debugging)
 
 ## Shembull i ekzekutimit te programit
 
+## Screenshots
 
+![Screenshot 1](Screenshots/foto1.png)
+![Screenshot 2](Screenshots/foto2.png)
+![Screenshot 3](Screenshots/foto3.png)
+![Screenshot 4](Screenshots/foto4.png)
+![Screenshot 5](Screenshots/foto5.png)
+![Screenshot 6](Screenshots/foto6.png)
+![Screenshot 8](Screenshots/foto8.png)
